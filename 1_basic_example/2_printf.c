@@ -1,5 +1,7 @@
 #include<stdio.h>
 
+/* This is an example that has compile error */
+
 void main(void)
 {
     int tea_price = 35;
