@@ -5,7 +5,7 @@ C 語言的關鍵字，在命名時不要和這些關鍵字重覆。
 
 # Data Size
 
-## example of MAX LOG
+## example of max long
 ![max long](MAX_LONG.png)
 
 ## different kind of data size
