@@ -25,7 +25,7 @@ int main(int argc, char **argv)
 	}
 
 	printf("======= for ===========\n");
-	for(i=100;i>=0;i--)
+	for(i=100;i>0;i--)
 		printf("i:%d\n",i);
 
 	exit(EXIT_SUCCESS);
