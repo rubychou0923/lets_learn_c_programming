@@ -6,6 +6,8 @@ main()
     int x,y;
     x = 0; y = ~0;
 
+	printf("[%s:%d] x:0x%x, y:0x%x\n",__func__,__LINE__,x,y);
+
     while(x != y){
         printf("%x & %x = %x\n", x, 0xff, x&0xff);
         printf("%x | %x = %x\n", x, 0x10f, x|0x10f);
