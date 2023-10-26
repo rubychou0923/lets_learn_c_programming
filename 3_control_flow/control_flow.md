@@ -31,11 +31,9 @@ if(expression)
 ```
 if(condition1) {
     statement1
-}  
-else if(condition2){
+}else if(condition2){
     statement2     
-}
-else {
+}else {
     statement2
 }    
 ```
