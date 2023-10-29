@@ -51,12 +51,14 @@ int printf (const char *format_string,...)
 The ellipsis (...) shows that other arguments follow. That's useful because it allows functions like printf to be written. Its declaration is this:
 
 
-## example: simple_func.c
+## example: simple_func.c, simple_func_2.c
 
 
 # 4.2.7. Compound statements and declarations
 
-## Example 4.5
+## example: example_4_2.c, example_4_3.c
+
+# scope
 ```
 int a;                  /* visible from here onwards */
 
@@ -72,8 +74,16 @@ void func(void){
 
 # 4.3. Recursion and argument passing
 
-## 4.3.1. Call by value
+## Call by value vs Call by reference
 
-## example: example_4_6.c, 
-![Relational operators.png](Relational_operators.png)
+## example: example_4_6.c
 
+## example: example_4_7.c, example_4_7_2.c
+
+# recursion
+
+## example: example_4_8.c
+
+# linkage
+
+## example: linkage/example_4.9/
