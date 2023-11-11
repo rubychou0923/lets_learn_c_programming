@@ -71,6 +71,7 @@ void func(void){
 }
       
 ```
+## example: scope.c
 
 # 4.3. Recursion and argument passing
 
@@ -87,3 +88,16 @@ void func(void){
 # linkage
 
 ## example: linkage/example_4.9/
+
+# function pointer
+```
+/* function returning pointer to int */
+int *func(int a, float b);
+
+/* pointer to function returning int */
+int (*func)(int a, float b);
+
+```
+example:func_pointer.c
+
+
