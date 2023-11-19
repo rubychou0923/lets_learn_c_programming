@@ -25,4 +25,7 @@ x/16x  array_3d
 
 ![arrays_memory](arrays_memory.png)
 
+### Example
+example_5_2.c
+
 
