@@ -60,3 +60,8 @@ https://itvoyagers.in/understand-pointers-in-c-programming-in-easy-way-1/
 ![5_arrays-example_5_1.png](5_arrays-example_5_1.png)
 ### Example
 example_5_1.c, example_5_1_2.c
+
+
+![example_5_4.png](example_5_4.png)
+### Example
+example_5_4.c
