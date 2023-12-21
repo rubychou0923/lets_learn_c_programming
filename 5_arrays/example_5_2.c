@@ -1,6 +1,6 @@
 #include<stdio.h>
 
-int array_1d[10]={0,1,2,3,4,5,6,7,8,9};
+int array_1d[10]={99,1,2,3,4,5,6,7,8,9};
 int array_2d[10][10]={
                        {0,1,2,3,4,5,6,7,8,9},
                        {10,11,12,13,14,15,16,17,18,19},
@@ -20,9 +20,23 @@ int array_3d[3][3][3]={
                 { {18,19,20}, {21,22,23}, {24,25,26}},
 };
 
+unsigned long long array_longlong[10]={0,1,2,3,4,5,6,7,8,9};
+char tmp[]="Hello World\n";
+//char *tmp="Hello World\n";
+
+
 int main(int argc, char **argv)
 {
+    int *ptr;
+
+    printf("&array_1d:0x%x\n",&array_1d);
     printf("array_1d[2]=%d\n",array_1d[2]);
     printf("array_2d[1][2]=%d\n",array_2d[1][2]);
     printf("array_3d[0][1][2]=%d\n",array_3d[0][1][2]);
+
+    printf("&array_1d=0x%x\n",&array_1d);
+
+    ptr=&array_1d;
+
+    printf("*ptr=%d\n",*ptr);
 }

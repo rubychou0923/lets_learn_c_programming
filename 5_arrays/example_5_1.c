@@ -2,14 +2,22 @@
 #include <stdlib.h>
 
 
+typedef struct {
+    char data1;
+    char data2;
+    int data3;
+    int data4;
+    int data5;
+} __attribute__((packed)) DATA;
 
 int main(int argc, char **argv)
 {
-    int x, *p;
+    int x=-1, *p;
     char c, *cp;
-    char d,e,f,g;
+    DATA data, *data_ptr;
 
     p = &x;         /* initialise pointer */
+    printf("[%s:%d]  x is %d at 0x%x\n",__func__,__LINE__,  x, &x);
     *p = 0;         /* set x to zero */
     printf("[%s:%d]  x is %d at 0x%x\n",__func__,__LINE__,  x, &x);
     printf("[%s:%d] *p is %d, p:0x%x, &p:0x%x\n",__func__,__LINE__, *p, p, &p);
@@ -22,13 +30,16 @@ int main(int argc, char **argv)
 
     cp = &c;
 
-    printf("[%s:%d] &c:0x%x sizeof(char)=%d, sizeof(cp)=%d, cp+1=0x%x\n",__func__,__LINE__,&c,sizeof(char),sizeof(cp), cp+1);
-
+    data_ptr = &data;
     
-    printf("[%s:%d] d is %d, at 0x%x\n",__func__,__LINE__, d, &d);
-    printf("[%s:%d] e is %d, at 0x%x\n",__func__,__LINE__, e, &e);
-    printf("[%s:%d] f is %d, at 0x%x\n",__func__,__LINE__, f, &f);
-    printf("[%s:%d] g is %d, at 0x%x\n",__func__,__LINE__, g, &g);
+    printf("[%s:%d] &x:0x%x sizeof(int)=%d, sizeof(p)=%d, p=0x%x, p+1=0x%x\n",__func__,__LINE__,&x,sizeof(int),sizeof(p),p, p+1);
+
+
+    printf("[%s:%d] &c:0x%x sizeof(char)=%d, sizeof(cp)=%d, cp=0x%x, cp+1=0x%x\n",__func__,__LINE__,&c,sizeof(char),sizeof(cp),cp, cp+1);
+
+
+    printf("[%s:%d] &data:0x%x sizeof(data)=%d, sizeof(data_ptr)=%d, data_ptr=0x%x, data_ptr+1=0x%x\n",__func__,__LINE__,&data,sizeof(data),sizeof(data_ptr),data_ptr,data_ptr+1);
+
     exit(EXIT_SUCCESS);
 }
 

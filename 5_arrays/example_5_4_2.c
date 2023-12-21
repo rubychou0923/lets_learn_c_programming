@@ -5,7 +5,7 @@
 
 int main(int argc, char **argv)
 {
-    int x[2]={0,1}, *p;
+    int x[]={0,1}, *p;
 
 
     int i=0,j=1,k=-1;

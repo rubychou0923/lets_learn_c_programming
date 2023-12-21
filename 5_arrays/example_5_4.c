@@ -5,25 +5,35 @@
 
 int main(int argc, char **argv)
 {
-    int x[2]={0,1}, *p;
+    int x[]={0,1,2,3,4,5,6,7,8,9}, *p;
 
     int k=-1;
+    int i=1;
 
-    p = &x;         /* initialise pointer */
+    printf("x:0x%x, &x:0x%x, x[0]=%d\n",x,&x,x[0]);
+    printf("i:0x%x, &i:0x%x\n",i,&i);
+
+    p = x;         /* initialise pointer */
+    //p = &x;         /* initialise pointer */
     printf("[%s:%d] p = &x  &x:0x%x, p:0x%x at 0x%x\n",__func__,__LINE__, &x, p, &p);
     printf("[%s:%d] x[0]:%d, x[1]:%d , &x[0]=0x%x, &x[1]=0x%x\n\n",__func__,__LINE__,x[0],x[1],&x[0],&x[1]);
 
     x[0]=0; x[1]=1;
     p = &x;         /* initialise pointer */
-    k=*p+1;
-    printf("[%s:%d] k=*p+1 k=%d\n",__func__,__LINE__,k);
-    printf("[%s:%d] x[0]:%d, x[1]:%d\n\n",__func__,__LINE__,x[0],x[1]);
+    k=*p;
+    printf("[%s:%d] k=*p k=%d\n",__func__,__LINE__,k);
 
-    x[0]=0; x[1]=1;
     p = &x;         /* initialise pointer */
     k=*(p+1);
     printf("[%s:%d] k=*(p+1) k=%d, p:0x%x, p+1 :0x%x\n",__func__,__LINE__,k, p, p+1);
     printf("[%s:%d] x[0]:%d, x[1]:%d\n\n",__func__,__LINE__,x[0],x[1]);
+
+
+    for(i=0;i<10;i++)
+    {
+        printf("p:0x%x, *p=%d\n",p,*p);
+        p=p+1;
+    }
 
     exit(EXIT_SUCCESS);
 
