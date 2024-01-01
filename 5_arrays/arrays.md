@@ -81,6 +81,11 @@ apply to the binary + operator, if E1 is an array object (equivalently, a pointe
 initial element of an array object) and E2 is an integer, E1[E2] designates the E2-th
 element of E1 (counting from zero).
 ```
+```
+5.8. Arrays, the & operator and function
+We have already emphasized that in most cases, the name of an array is converted into the address of its first element
+```
+
 Example: test_array.c
 
 ## 5.4. Character handling
