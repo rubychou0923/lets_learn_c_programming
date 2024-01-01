@@ -81,9 +81,13 @@ apply to the binary + operator, if E1 is an array object (equivalently, a pointe
 initial element of an array object) and E2 is an integer, E1[E2] designates the E2-th
 element of E1 (counting from zero).
 ```
+Example: test_array.c
 
 ## 5.4. Character handling
 Example: 5_6.c,  5_7.c ,  5_8.c
 
 ## 5.4.3. Untyped pointers
 Example: test_malloc.c
+
+## 5.5. Sizeof
+Example: 5_14.c, 5_15.c
