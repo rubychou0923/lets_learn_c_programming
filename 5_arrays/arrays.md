@@ -65,3 +65,25 @@ example_5_1.c, example_5_1_2.c
 ![example_5_4.png](example_5_4.png)
 ### Example
 example_5_4.c, example_5_4_2.c
+
+## C spec (https://www.dii.uchile.cl/~daespino/files/Iso_C_1999_definition.pdf)
+sec6.5.2.1
+```
+6.5.2.1 Array subscripting
+Constraints
+1 One of the expressions shall have type ‘‘pointer to object type’’, the other expression shall
+have integer type, and the result has type ‘‘type’’.
+Semantics
+2 A postfix expression followed by an expression in square brackets [] is a subscripted
+designation of an element of an array object. The definition of the subscript operator []
+is that E1[E2] is identical to (*((E1)+(E2))). Because of the conversion rules that
+apply to the binary + operator, if E1 is an array object (equivalently, a pointer to the
+initial element of an array object) and E2 is an integer, E1[E2] designates the E2-th
+element of E1 (counting from zero).
+```
+
+## 5.4. Character handling
+Example: 5_6.c,  5_7.c ,  5_8.c
+
+## 5.4.3. Untyped pointers
+Example: test_malloc.c
