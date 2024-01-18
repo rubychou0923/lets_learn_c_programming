@@ -56,6 +56,8 @@ https://itvoyagers.in/understand-pointers-in-c-programming-in-easy-way-1/
 
 ![pointers-in-c-itvoyagers-1536x864](pointers-in-c-itvoyagers-1536x864.jpg)
 
+![pointer_example](pointer_example.png)
+
 
 ![5_arrays-example_5_1.png](5_arrays-example_5_1.png)
 ### Example
