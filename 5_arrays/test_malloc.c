@@ -25,5 +25,11 @@ void main(void)
     }
 
     printf("sizeof(float):%d, sizeof(fp)=%d\n",sizeof(float),sizeof(fp));
+
+/*
+    for(int i=0;i<1024*1024;i++)
+        fp[i]=(float)i;
+*/
+
     free(fp);
 }
