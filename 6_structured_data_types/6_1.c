@@ -47,9 +47,10 @@ main(){
 
       /* now print */
       for(lo_indx = 0; lo_indx < icount; lo_indx++){
-              printf("%c %d %d\n", ar[lo_indx].wp_cval,
-                              ar[lo_indx].wp_font,
-                              ar[lo_indx].wp_psize);
+              printf("%c(0x%x) %d(0x%x) %d(0x%x)\n", 
+                              ar[lo_indx].wp_cval,&ar[lo_indx].wp_cval,
+                              ar[lo_indx].wp_font,&ar[lo_indx].wp_font,
+                              ar[lo_indx].wp_psize,&ar[lo_indx].wp_psize);
       }
       exit(EXIT_SUCCESS);
 }
