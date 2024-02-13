@@ -4,6 +4,7 @@
 
 
 * Directive	Meaning
+```
 # include	include a source file
 # define	define a macro
 # undef	undefine a macro
@@ -18,9 +19,11 @@
 # pragma	used for implementation-dependent control
 #	null directive; no effect
 Table 7.1. Preprocessor directives
+```
 
-
+```
 #define SQR(x)  ( x * x )
+```
 * Example: 7_1.c
 
 
