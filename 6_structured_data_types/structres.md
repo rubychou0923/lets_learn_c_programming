@@ -16,3 +16,6 @@ https://android.googlesource.com/kernel/common/+/a7827a2a60218b25f222b54f77ed38f
 
 # enums
 enums.c
+
+# volatile
+volatile.c
